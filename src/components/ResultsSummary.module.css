@@ -1,0 +1,243 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --lightest-gray-blue: hsla(224, 30%, 75%, 0.9);
+  --light-gray-blue: hsla(224, 30%, 40%, 0.9);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+  --dark-gray-blue-transparent: hsla(224, 30%, 27%, 0.5);
+  --dark-gray-blue-transparent2: hsla(224, 30%, 27%, 0.1);
+  --dark-blue: hsla(221, 100%, 47%);
+  --red: hsl(0, 100%, 70%);
+  --light-red: hsl(0, 100%, 97%);
+  --yellow: hsl(55, 100%, 45%);
+  --light-yellow: hsl(55, 100%, 97%);
+  --green: hsl(100, 100%, 40%);
+  --light-green: hsl(120, 100%, 97%);
+  --blue: hsl(240, 100%, 40%);
+  --light-blue: hsl(240, 100%, 97%);
+}
+
+@font-face {
+  font-family: "HankenGrotesk";
+  src: url("../fonts/HankenGrotesque.ttf");
+}
+
+.container {
+  display: flex;
+  background-color: var(--white);
+  border-radius: 30px;
+  box-shadow:
+      1.6px 1.2px 4.3px rgba(0, 0, 0, 0.005),
+      3.7px 2.8px 10px rgba(0, 0, 0, 0.007),
+      6.6px 5px 18px rgba(0, 0, 0, 0.009),
+      10.9px 8.3px 29.9px rgba(0, 0, 0, 0.011),
+      18px 13.8px 49.2px rgba(0, 0, 0, 0.013),
+      31.4px 24px 86px rgba(0, 0, 0, 0.015),
+      68px 52px 186px rgba(0, 0, 0, 0.02);
+  font-family: "HankenGrotesk";
+}
+
+.scoreContainer {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-blue);
+  border-radius: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(0deg, var(--dark-gray-blue-transparent2) 0%, var(--light-gray-blue) 100%);
+  border-radius: 100px;
+  width: 180px;
+  height: 180px;
+}
+
+.score h1 {
+  font-size: 60px;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.score p {
+  margin-top: -40px;
+  color: var(--light-lavender);
+}
+
+.scoreDescription {
+  width: 80%;
+  font-size: 16px;
+  margin-top: -20px;
+  color: var(--light-lavender);
+}
+
+h3 {
+ font-size: 30px;
+ font-weight: 500;
+ color: var(--white);
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--light-lavender);
+}
+
+.summaryContainer {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 30px;
+  padding: 20px;
+  text-align: left;
+}
+
+.summaryHeading {
+  width: 90%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.summaryHeading p {
+  font-weight: 800;
+  color: var(--dark-gray-blue);
+}
+
+.scoreCardReaction {
+  width: 90%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--light-red);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.scoreCardReaction p {
+  color: var(--red);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.scoreCardMemory {
+  width: 90%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--light-yellow);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.scoreCardMemory p {
+  color: var(--yellow);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.scoreCardVerbal {
+  width: 90%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--light-green);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.scoreCardVerbal p {
+  color: var(--green);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.scoreCardVisual {
+  width: 90%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--light-blue);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.scoreCardVisual p {
+  color: var(--blue);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.scoreCardText {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+.scoreCardScore {
+  display: flex;
+}
+
+.scoreCardScore p {
+  font-weight: 800;
+  margin-left: 10px;
+  color: var(--lightest-gray-blue);
+}
+
+.userScore p {
+  color: var(--dark-gray-blue);
+}
+
+button {
+  width: 100%;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: var(--dark-gray-blue);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+  }
+
+  .scoreContainer {
+    margin-top: -25px;
+    width: 92%;
+  }
+
+  .summaryContainer {
+    width: 92%;
+  }
+}
